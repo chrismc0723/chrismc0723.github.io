@@ -10,6 +10,10 @@ html{
 body{
     background: #080808;
     color: #fff;
+    margin: 0;
+    padding: 1%;
+    font-size: 100.01%;
+    font-family: verdana, aria;
 }
 #header{
     width: 100%;
@@ -325,16 +329,18 @@ nav .fa-regular, .fa-solid{
     display: none;
 }
 
-@media only screen and (max-width: 600px){
-    #header{
-        background-image: url(images/Logo-mobile.jpg);
+@media only screen and (max-width: 481px){
+    img{
+        width: 400px;
+        height: 300px;
     }
     .header-text{
-        margin-top: 100%;
-        font-size: 16px;
+        margin-top: 5%;
+        font-size: 30px;        
     }
     .header-text h1{
-        font-size: 30px;
+        font-size: 60px;
+        margin-top: 20px;
     }
     nav .fa-regular, fa-solid{
         display: block;
