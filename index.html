@@ -1,210 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" Content="IE-edge">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website - Christopher McClure</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/eaa462b0f3.js" crossorigin="anonymous"></script>
+    <meta charsets="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal projects Website | Chris McClure</title>
+
+    <!-- ----BOX ICONS---- -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- ----CUSTOM CSS---- -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/Logo.jpg" class="Logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p>Software Tester/Systems Engineer/Tech Enthusiast</p>
-            <h1>Hi, I'm <span>Chris</span><br>McClure from Scotland</h1>
-        </div>
-    </div>
-</div>
-<!-- ----------about---------- -->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/Setup.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>I am a 23-year-old Cyber Security Graduate currently working full time as an Operation Systems Engineer at SSE. 
-                    I grew a lot throughout my University course, I chose to finish with the Bachelor's instead of going with an 
-                    Honour's degree as I wanted to gain more experience within a proper working environment.</p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Software Testing</span><br>Testing critical applications for a 24/7 Control Room</li>
-                            <li><span>Web Development</span><br>Build websites with HTML, CSS, Javascript and web builders such as Wix</li>
-                            <li><span>Programming</span><br>Python Programming</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>September 2021 - Current</span><br>Systems Engineer at SSE</li>
-                            <li><span>July 2021 - August 2021</span><br>Tech Tester Agency Worker at John Pye</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>September 2018 - August 2021</span><br>BEng Cyber Security at University of the West of Scotland</li>
-                            <li><span>May 2022 - May 2022</span><br>301V from CISA</li>
-                        </ul>
-                    </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- -----------services-------------------- -->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-bug"></i>
-                <h2>Software Testing</h2>
-                <p>I will use my skills to test the functionality of your software 
-                    whether that be a local application or web applcation.</p>
-                    <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-regular fa-images"></i>
-                <h2>Web Design</h2>
-                <p>I will help build a functional and well designed website using HTML, CSS and Javascript.</p>
-                    <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-python"></i>
-                <h2>Python programming</h2>
-                <p>I will help with creating a python program you need. Make sure it functions as needed, 
-                    fix mistakes in your code and enhance.
-                </p>
-                    <a href="#">Learn more</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- ------------portfolio---------- -->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/work-webscrapers.png">
-                <div class="layer">
-                    <h3>Python webscraper</h3>
-                    <p>Built to find information on the Marvel website and provide links</p>
-                    <a href="#"><i class="fa-brands fa-python" style="color: #ffffff;"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/marvel-website.png">
-                <div class="layer">
-                    <h3>WIX Website</h3>
-                    <p>Built to see how functional WIX can be.</p>
-                    <a href="#"><i class="fa-solid fa-object-group" style="color: #ffffff;"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/first-website.png">
-                <div class="layer">
-                    <h3>University Prohect</h3>
-                    <p>This was the first website I built at University</p>
-                    <a href="#"><i class="fa-brands fa-html5" style="color: #ffffff;"></i></a>
-                </div>
-            </div>
-        </div>
-        <a href="#" class="btn">See more</a>
-    </div>
-</div>
-
-<!-- -----------contact----------->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-regular fa-paper-plane"></i>contact@example.com</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/-christopher-mcclure/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/chrismc0723" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-                </div>
-                <a href="images/Christopher McClure - CV 04012023 (1).docx" download class="btn btn2">Download CV</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright © Christopher. <i class="fa-solid fa-heart" ></i></p>
-    </div>
-</div>
-
-<script>
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
-<script>
-
-    var sidemenu = document.getElementById("sidemenu");
     
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyOtJPxoDvNaIKFnU4PJyEjOM33pri-y-9mAfyzKJqaODz8v5R9a66VLGvTOsp7JOsd/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
+
+    <header class="header">
+        <a href="#" class="logo">Chris</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ----HOME SECTION DESIGN---- -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Chris McClure</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>I have had a wide range of experiences. I am also drawn to learning about new innovative tech</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/-christopher-mcclure/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com/chrismc0723" target="_blank"><i class='bx bxl-github' ></i></a>
+            </div>
+            <a href="images/Christopher McClure - CV 04012023 (1).docx" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="/images/Logo-face.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- ---- ABOUT SECTION---- -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/Me.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Systems Engineer/Software Testing/Security Analyst/IT Enthusiast</h3>
+            <p>I am the type of person always looking to learn something new, improve my own skills and expand them.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- ----EXPERIENCE SECTION---- -->
+    <section class="experience" id="experience">
+        <h2 class="heading">My <span>experience</span></h2>
+
+        <div class="experience-container">
+            <div class="experience-box">
+                <i class='bx bx-water' ></i>
+                <h3>Systems Engineer</h3>
+                <p>Providing support for a 24/7 control room, I make sure all software and hardware is fully operational and providing solutions.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="experience-box">
+                <i class='bx bx-desktop'></i>
+                <h3>Hardware Tester</h3>
+                <p>testing the functionality and integrity of a variety of tech from TV's, phones, laptops, PC's and much more for an auction house.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="experience-box">
+                <i class='bx bxs-pizza' ></i>
+                <h3>Delivery Driver</h3>
+                <p>Delivering pizza was the main part of the role while also supporting those in the shop with packaging food and cleaning the shop.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----PROJECTS SECTION---- -->
+    <section class="projects" id="projects">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="projects-container">
+            <div class="projects-box">
+                <img src="images/Webscraper-git.png" alt="">
+                <div class="projects-layer">
+                    <h4>Python Web Scraper</h4>
+                    <p>program to scrape data from the Marvel website</p>
+                    <a href="#"><i class='bx bxl-python' ></i></a>
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="images/marvel-website.png" alt="">
+                <div class="projects-layer">
+                    <h4>WIX Website Design</h4>
+                    <p>MARVEL Fan Website</p>
+                    <a href=""><i class='bx bxl-python' ></i></a>
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="images/first-website.png" alt="">
+                <div class="projects-layer">
+                    <h4>First HTML Website</h4>
+                    <p>First HTML Website built at University</p>
+                    <a href=""><i class='bx bxl-python' ></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----CONTACT SECTION---- -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form name="submit-to-google-sheet">
+            <div class="input-box">
+                <input type="text" name="Name" placeholder="Full Name">
+                <input type="email" name="Email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" name="Number" placeholder="Mobile Number">
+                <input type="text" name="Subject" placeholder="Email Subject">
+            </div>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+
+    <!-- ----FOOTER SECTION---- -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Chris | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!-- ----SCROLL REVEAL---- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----TYPED JS---- -->
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby_Q1_zROhzppKzH2-uQnM9a96wT75Nwxw2qk7u6Z5FvNrKcGd0H4Ndl8qK1fxK1l2RYA/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
         })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+      </script>
+    
+    <script src="js/main.js"></script>
 </body>
+
+
 </html>
+
+
+
