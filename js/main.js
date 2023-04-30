@@ -1,3 +1,12 @@
+/* ----TOGGLE ICON NAVBAR---- */
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+};
+
 /* ----SCROLL SECTION ACTIVE LINK---- */
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
@@ -34,28 +43,20 @@ window.onscroll = () => {
     delay: 200
 });
 
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .experience, .container, .portfolio-box, .contact form', { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+ScrollReveal().reveal('.home-content, .heading, skills.top-div', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .experience, .container, .project-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img, .skills.content, .journey.row, .project-list', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content, .journey-column', { origin: 'right' });
 
 /* ----TYPED JS---- */
 const typed = new Typed('.multiple-text', {
-    strings: ['Systems Engineer', 'IT Enthusiast'],
+    strings: ['Systems Engineer', 'Tech Enthusiast'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
     loop: true
 });
 
-/* ----TOGGLE ICON NAVBAR---- */
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
-
-menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-};
 
 
 
