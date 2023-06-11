@@ -50,12 +50,20 @@ ScrollReveal().reveal('.home-content p, .about-content, .journey-column', { orig
 
 /* ----TYPED JS---- */
 const typed = new Typed('.multiple-text', {
-    strings: ['Systems Engineer', 'Tech Enthusiast'],
+    strings: ['Systems Engineer', 'Tech Enthusiast', 'Software Tester'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
     loop: true
 });
+
+const typed2 = new Typed('.multiple-text-2', {
+    strings: ['Systems Engineer', 'Tech Enthusiast', 'Software Tester'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+})
 
 
 
